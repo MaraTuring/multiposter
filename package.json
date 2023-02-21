@@ -1,0 +1,31 @@
+{
+  "name": "maraturing-marketing-thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch --onSuccess \"nodemon dist/index.js\""
+  },
+  "nodemonConfig": {
+    "watch": [
+      "python/"
+    ],
+    "ext": "js,json,py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@y21/tljs": "^0.4.0",
+    "axios": "^1.3.2",
+    "colorette": "^2.0.19",
+    "execa": "^6.1.0"
+  }
+}
